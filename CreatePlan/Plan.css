@@ -1,0 +1,505 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Moranga-Medium";
+}
+
+li {
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Moranga-Medium";
+  src: url(../Resources/Font-medium.otf);
+}
+
+@font-face {
+  font-family: "Moranga-Bold";
+  src: url(../Resources/Font-Bold.otf);
+}
+
+body {
+  margin: 40px 30px 0;
+}
+
+/* Nav */
+
+li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li a:visited {
+  color: inherit;
+}
+
+.logo-part {
+  font-size: 1.5em;
+  font-family: "Moranga-Bold";
+  display: flex;
+  align-items: flex-start;
+}
+
+nav .logo-part li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-elements {
+  display: flex;
+}
+
+.nav-elements li {
+  padding: 0 10px;
+  font-size: 0.8em;
+  opacity: 0.6;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.nav-elements li:hover {
+  opacity: 1;
+}
+
+nav {
+  display: flex;
+  height: fit-content;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* footer */
+
+footer {
+  padding: 40px;
+  display: flex;
+  background-color: rgb(51, 61, 75);
+  margin: 0;
+}
+
+nav.footer {
+  width: clamp(530px, 60%, 100%);
+  margin: 0;
+  color: white;
+}
+
+.Social-Links {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  color: white;
+}
+.Social-Links a {
+  color: white;
+}
+
+/* footer */
+
+/* Nav */
+
+/* Plan Part 1 */
+
+.Plan-P1 {
+  height: 80vh;
+  width: 100%;
+  color: white;
+  padding: 50px 20px 20px 80px;
+  border-radius: 12px;
+  display: flex;
+  flex-flow: column nowrap;
+  background-image: url(Resources/Wallpaper.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.P1-Head {
+  font-size: 4em;
+  width: 450px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  line-height: 1;
+}
+
+.P1-Paragraph {
+  width: 450px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 30px;
+}
+
+/* Plan Part 1 */
+
+/* Plan Part 2 */
+
+/* .P2-First-P {
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+  font-size: 24px;
+} */
+
+/* combined shape */
+
+.Combined-Shape {
+  display: flex;
+  align-items: center;
+  width: clamp(150px, 100%, 600px);
+}
+
+.empty-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgb(14, 135, 132);
+}
+
+.line {
+  width: clamp(150px, 100%, 600px);
+  border: 1px solid rgb(253, 214, 186);
+}
+
+/* combined shape */
+
+.Plan-P2 {
+  width: 100%;
+  height: fit-content;
+  background-color: #2b323a;
+  border-radius: 15px;
+  position: relative;
+  margin-bottom: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  gap: 20px;
+  margin-bottom: 80px;
+}
+
+.P2-Flex {
+  width: 100%;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.P2-Card {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.P2-Card .Heading {
+  color: rgb(253, 214, 186);
+  font-size: 65px;
+}
+.P2-Card .Sub-Heading {
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+}
+.P2-Card p {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 16px;
+  line-height: 1.6;
+  width: clamp(250px, 100%, 310px);
+}
+
+/* Plan Part 2 */
+
+/* Plan Part 3 */
+
+.Plan-P3 {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 0 80px;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.Step {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.Step * {
+  font-family: sans-serif;
+  font-weight: bold;
+  /* background-color: rgb(190, 218, 218); */
+  width: fit-content;
+  padding: 5px;
+  pointer-events: fill;
+}
+
+.Step h2 {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+  transition: 0.3s;
+}
+.Step h2 b {
+  cursor: pointer;
+  color: rgba(20, 20, 20, 0.4);
+  transition: 0.3s;
+}
+.Step h2:hover {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.Step h2:hover b {
+  color: rgba(14, 134, 132, 0.7);
+}
+
+.Order-Summary {
+  background-color: #293038;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  border-radius: 8px;
+  padding: 20px 30px;
+  margin: 40px 0;
+}
+.Order-Summary h6 {
+  font-family: sans-serif;
+  font-weight: 600;
+  color: rgba(200, 200, 200, 0.6);
+  width: 100%;
+}
+.Order-Summary p {
+  font-family: sans-serif;
+  font-weight: bold;
+  color: white;
+}
+.Order-Summary p b {
+  font-family: sans-serif;
+  color: #187f7d;
+}
+
+.Choices {
+  display: flex;
+  flex-direction: column;
+}
+
+.Choice {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+
+.Choice h1 {
+  width: 100%;
+  font-size: 36px;
+  color: rgba(0, 0, 0, 0.65);
+  margin: 40px 0 40px 22px;
+}
+
+.Choice-Card {
+  background-color: rgb(244, 241, 235);
+  width: clamp(230px, 28%, 100%);
+  height: 250px;
+  border-radius: 8px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.Choice-Card p {
+  color: rgba(0, 0, 0, 0.65);
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.Choice-Card * {
+  transition: 0.3s;
+}
+
+.Choice-Card:hover {
+  background-color: rgba(14, 138, 138, 0.7);
+}
+.Choice-Card:hover h2 {
+  color: rgba(255, 255, 255, 0.95);
+}
+.Choice-Card:hover p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.Selected-Card.Choice-Card:hover {
+  background-color: rgba(14, 138, 138, 1);
+}
+.Selected-Card.Choice-Card:hover h2 {
+  color: rgba(255, 255, 255, 1);
+}
+.Selected-Card.Choice-Card:hover p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.Selected-Card {
+  background-color: rgba(14, 138, 138, 1);
+}
+.Selected-Card h2 {
+  color: rgba(255, 255, 255, 1);
+}
+.Selected-Card p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.Plan-button {
+  padding: 15px 30px;
+  background-color: rgb(21, 139, 139);
+  color: white;
+  width: fit-content;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.Plan-button:hover {
+  background-color: rgb(19, 161, 161);
+}
+
+/* Plan Part 3 */
+
+/* Media queries */
+
+@media (max-width: 1300px) {
+  .P2-Flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .P2-Card {
+    width: 95%;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+  }
+  .P2-Card p {
+    width: clamp(300px, 100%, 100vw);
+  }
+  .Combined-Shape {
+    display: none;
+  }
+
+  /* Plan-P3 */
+  aside {
+    display: none;
+  }
+
+  .Choice h1 {
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 980px) {
+  .P1-Head {
+    width: clamp(250px, 100%, 450px);
+    font-size: 3em;
+  }
+  .P1-Paragraph {
+    width: clamp(250px, 100%, 450px);
+    font-size: 15px;
+  }
+
+  .Plan-P3 {
+    margin: 0 50px;
+  }
+
+  .Choice-Card {
+    width: 100%;
+    height: 150px;
+  }
+
+  footer .nav-elements {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  .Plan-P1 {
+    padding: 25px 20px 20px 40px;
+  }
+
+  .Plan-P3 {
+    margin: 0 30px;
+  }
+
+  .Choice h1 {
+    width: 100%;
+    font-size: 30px;
+  }
+
+  footer {
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 20px;
+  }
+
+  nav.footer {
+    width: 100%;
+    margin: 0;
+    color: white;
+  }
+
+  footer .nav-elements {
+    flex-direction: row;
+  }
+
+  .Social-Links {
+    width: 100%;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  /* Nav */
+  nav .logo-part {
+    font-size: 1em;
+  }
+
+  .logo-part img {
+    width: 18px;
+    padding-right: 2px;
+  }
+
+  .nav-elements {
+    padding: 0 5px;
+    font-size: 0.7em;
+  }
+  .nav-elements li {
+    padding: 0 5px;
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 600px) {
+  .P1-Head {
+    width: clamp(250px, 100%, 450px);
+    font-size: 2.5em;
+  }
+  .P1-Paragraph {
+    width: clamp(250px, 100%, 450px);
+    font-size: 14px;
+  }
+
+  .Plan-P3 {
+    margin: 0 0;
+  }
+}
